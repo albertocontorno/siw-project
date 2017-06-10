@@ -1,0 +1,44 @@
+
+        <div id="sfondo">
+            <div class="row justify-content-center align-items-end opacity-m" id="riga-jumbo">
+                <div class="jumbotron col-8 opacity-h" id="jumbo">
+                    <div class="container col-xs-12 col-sm-8 col-md-8" id="riga-jumbo-interna">
+                        <h1 class="display-6 text-center opacity-h">Hello, please login!</h1>
+                        <p class="lead text-center">Enter your credentials and click login </p>
+                        <form class="jusify-content" (ngSubmit)="onSubmitLogin(f)" #f="ngForm" id="login-form">
+                            <div class="form-group text-center">
+                            <label class="col-xs-1 col-sm-12 col-md-5 col-lg-5 text-center"><strong>Username:</strong><input ngModel  type="text" class="form-control" name="username" id="username" required ></label>
+                            </div>
+                            <div class="form-group text-center">
+                            <label class="col-xs-1 col-sm-12 col-md-5 col-lg-5 text-center"><strong>Password:</strong><input ngModel  type="password" class="form-control" name="password" required ></label>
+                            </div>
+                        </form>
+                         <p class="text-center">If you do not have credentials, click <a class="btn btn-info" routerLink="/elencoArtisti" role="button">Signup</a> </p>
+                        <hr class="my-3 col-xs-1 col-md-6 col-lg-6">
+                        <p class="lead text-center"> <input type="submit" class="btn btn-primary btn-lg" role="button" value="Login" form="login-form"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            //per centrare il jumbotron
+
+            var margin = (jQuery("body").outerHeight()-jQuery("#jumbo").outerHeight())/2
+           jQuery("#jumbo").css("marginTop", margin);
+
+            alert("fungo");
+
+            window.onresize = resize;
+
+            function resize(){
+            var margin = (jQuery("body").outerHeight()-jQuery("#jumbo").outerHeight())/2
+            jQuery("#jumbo").css("marginTop", margin); alert("fungo");
+          }
+
+        </script>

@@ -1,0 +1,19 @@
+
+body{
+  background-color: transparent !important;
+}
+
+#jumbo{
+  max-width: 100%;
+  background: rgba(236, 238, 239, 0.85);
+
+}
+
+#riga-jumbo{
+  max-width: 100%;
+  margin: 0px !important;
+}
+
+
+/*  opacity: 1;
+  filter: alpha(opacity=100);*/

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+   /*background: url(bg-weather.jpg) no-repeat center center fixed;*/
+   background: url('http://www.boorp.com/sfondi_gratis_desktop_pc/sfondi_gratis/sfondi_arte_quadri/leonid_afremov_viale.jpg') no-repeat center center fixed;
+
+}

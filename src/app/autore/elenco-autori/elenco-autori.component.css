@@ -1,0 +1,30 @@
+#box{
+      background-color: white;
+      height: 100%;
+    }
+
+ .spacer{
+          min-height: 2%;
+        }
+
+
+#nav-side{
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.active-link{
+  background-color:azure;
+}
+
+
