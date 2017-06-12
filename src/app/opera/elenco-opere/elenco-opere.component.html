@@ -1,8 +1,7 @@
 
 <div id="box">
   <div class="row" style="max-width:100%">
-    <div class="col-1" style="padding-left:3px; padding-right:3px">
-      <!--<div class="" style="height:56px; border:1px solid black;" id="quadratoTroll"></div>-->
+    <div class="col-xs-2 col-sm-1" style="padding-left:3px; padding-right:3px">
       <ul class="list-group nav" style="width:3%; height:50%;" id="nav-side">
 
         <li class="list-group-item"><a routerLink="/elencoOpere" fragment="a" (click)="onAnchorClick()">A</a></li>
@@ -35,69 +34,11 @@
       </ul>
     </div>
 
-    <div class="col-10">
+    <div class="col-xs-9 col-sm-10">
 
-      <div *ngFor="let opera of opere">
-        <br>
-        <div>
-          <p>Nome Opera: {{opera.titolo}}, (Autore:{{opera.autore}})</p>
-        </div>
+      <div id="div-wrapper" #dw>
 
-      </div>
-
-      <div class="row">
-        <div class="col-md-11">
-
-          <div id="a">
-            <h2 class="letter">A</h2>
-            <hr>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="/elencoOpere">La Gioconda </a>  (1502) - Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Gioconda, 1502, Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-            </ul>
-          </div>
-
-          <div id="b">
-            <h2 class="letter">B</h2>
-            <hr>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="/elencoOpere">La Gioconda </a>  (1502) - Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Gioconda, 1502, Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-            </ul>
-          </div>
-
-          <div id="c">
-            <h2 class="letter">C</h2>
-            <hr>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="/elencoOpere"><b>La Gioconda</b></a>  (1502) - Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Gioconda, 1502, Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-            </ul>
-          </div>
-
-          <div id="d">
-            <h2 class="letter">D</h2>
-            <hr>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="/elencoOpere">La Gioconda </a>  (1502) - Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Gioconda, 1502, Leonardo Da Vinci</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-              <li class="list-group-item">La Primavera, bho, Sandro Botticelli</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
+    </div>
 
       <br> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
