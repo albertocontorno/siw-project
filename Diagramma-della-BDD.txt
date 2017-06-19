@@ -1,0 +1,7 @@
+UTENTE(ID,email,password,ruolo)
+QUADRO(ID,titolo,descrizione,tecnica,anno,larghezza,altezza,imgpath,*artista)
+AUTORE(ID,nome,cognome,dataNascita,dataMorte,luogoNascita,descrizione,imgPath,opere)
+
+*vincolo referenziale tra 'artista' di QUADRO e 'id' di AUTORE.
+
+In maiuscolo le chiavi delle tabelle.

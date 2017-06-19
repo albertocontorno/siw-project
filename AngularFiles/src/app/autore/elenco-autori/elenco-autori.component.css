@@ -1,0 +1,45 @@
+#box{
+      background-color: white;
+      height: 100%;
+    }
+
+ .spacer{
+          min-height: 2%;
+        }
+
+
+#nav-side{
+  position: -webkit-sticky;
+  position: fixed;
+  margin-top: 56px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.active-link{
+  background-color:azure;
+}
+
+.letter{
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.colore{
+  color:red;
+}
+
+.puntatore{
+  cursor: pointer;
+}
+
+.elemento{
+  border-color: green;
+}

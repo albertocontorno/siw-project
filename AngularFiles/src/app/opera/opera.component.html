@@ -1,0 +1,33 @@
+<div id="box">
+  <div class="spacer"></div>
+
+  <div class="container" id="wrapper">
+
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="text-center" id="img">
+          <img id="img-opera" src="{{opera.imgPath}}">
+        </div>
+      </div>
+      <div class="col-xs-12 offset-0 col-md-6">
+        <div class="" id="detail-opera" >
+          <p><strong>Titolo: </strong>{{opera.titolo}}</p>
+          <p><strong>Autore: </strong><a (click)="onClickAutore()" class="link">{{opera.artistaCognome}}</a></p>
+          <p><strong>Anno: </strong>{{opera.anno}}</p>
+          <p><strong>Tecnica: </strong>{{opera.tecnica}}</p>
+          <p><strong>Dimensioni: </strong>{{opera.larghezza}} x {{opera.altezza}}</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-12" id="desc-opera">
+        <p><strong>Descrizione: </strong></p>
+        <p>{{opera.descrizione}}</p>
+      </div>
+    </div>
+
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+  </div>
+</div>

@@ -1,0 +1,66 @@
+CASO D'USO 1 - Inserimento Artista
+Attore primario: Amministratore
+1)L'amministratore ha effettuato l'accesso al sito con le credenziali da amministratore.
+2)L'amministratore seleziona l'opzione "Inserisci Artista" dalla navbar.
+3)Il sistema mostra la form in cui inserire i dati dell'artista.
+4)L'amministratore compila la form, il sistema controlla che i vari campi siano validi.
+5)L'amministratore conferma la creazione dell'artista cliccando su "invia".
+6)Il sistema inserisce il nuovo artista nel database e mostra la pagina dell'artista appena inserito.
+7)L'artista è stato inserito e l'amministratore può continuare la navigazione.
+
+1-5)L'amministratore puo annullare la creazione dell'artista tornando alle altre pagine di navigazione.
+
+
+
+CADO D'USO 2 - Inserimento Opera
+Attore primario: Amministratore
+1)L'amministratore ha effettuato l'accesso al sito con le credenziali da amministratore.
+2)L'amministratore selezione l'opzione "Inserisci Opera" dalla navbar.
+3)Il sistema mostra la form in cui inserire i dati dell'Opera.
+4)L'amministratore compila la form, il sistema controlla che i vari campi siano validi.
+5)L'amministratore conferma la creazione dell'opera cliccando su "invia".
+6)Il sistema inserisce la nuova opera nel database e mostra la pagina dell'opera appena inserita.
+7)L'opera è stata inserito e l'amministratore può continuare la navigazione.
+
+1-5)L'amministratore può annullare la crazione dell'opera tornando alle altre pagine di navigazione.
+
+
+
+CADO D'USO 3 - Cancellazione Opera
+Attore primario: Amministratore
+1)L'amministratore ha effettuato l'accesso al sito con le credenziali da amministratore.
+2)L'amministratore naviga sulla pagina che mostra l'elenco delle opere.
+3)L'amministratore clicca sulla "x" rossa accanto al nome dell'opera che vuole eliminare.
+4)Il sistema cancella l'opera selezionata dal database e aggiorna l'elenco delle opere.
+5)L'opera è stata cancellata e l'amministratore può continuare la navigazione.
+
+
+
+CASO D'USO 4 - Cancellazione artista
+Attore primario: Amministratore
+1)L'amministratore ha effettuato l'accesso al sito con le credenziali da amministratore.
+2)L'amministratore naviga sulla pagina che mostra l'elenco degli artisti.
+3)L'amministratore clicca sulla "x" rossa accanto al nome dell'artista che vuole eliminare.
+4)Il sistema cancella l'artista selezionato dal database e tutte le opere di quell'artista e aggiorna l'elenco.
+5)L'artista e le sua opere sono state cancellate e l'amministratore può continuare la navigazione.
+
+
+
+CASO D'USO 5 - Registrazione utente
+Attore primario: Utente
+1)Un utente non ancora registrato al sito della galleria d'arte arriva sul sito.
+2)Il sistema lo reindirizza alla pagina di "login".
+3)L'utente selezione l'opzione "sign-up" per registrarsi al sito.
+4)Il sistema mostra la pagina con la form per registrarsi (email e password).
+5)L'utente inserisce i suoi dati e clicca il tasto "sign-up".
+6)Il sistema aggiunge l'utente alla lista degli utenti registrati e reindirizza alla pagina di "login".
+7)L'utente appena registrato puo ora accedere al sito.
+
+
+
+CASO D'USO 6 - Navigazione
+Attore primario: Utente/Amministratore
+1)L'utente/amministratore ha effettuato l'accesso al sito.
+2)L'utente/amministratore puo navigare fra gli artisti e le opere in vari modi.
+	(elenchi, accesso a tutte le opere di un'artista, accesso all'artista di un'opera, ecc.)
+

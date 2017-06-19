@@ -1,0 +1,26 @@
+
+<div id="sfondo">
+    <div class="row justify-content-center align-items-end opacity-m" id="riga-jumbo">
+        <div class="jumbotron col-8 opacity-h" id="jumbo">
+            <div class="container col-xs-12 col-sm-8 col-md-8" id="riga-jumbo-interna">
+                <h1 class="display-6 text-center opacity-h">Hello, please login!</h1>
+                <p class="lead text-center">Enter your credentials and click login </p>
+                <p id="error" class="hidden text-center  align-items-center justify-content-center"><span class="alert-warning">{{error}}</span></p>
+                <form class="jusify-content" (ngSubmit)="onSubmitLogin(f)" #f="ngForm" id="login-form">
+                    <div class="form-group text-center">
+                    <label class="col-xs-1 col-sm-12 col-md-5 col-lg-5 text-center"><strong>E-mail:</strong><input ngModel  type="email" class="form-control" name="email" id="email" required email></label>
+                    </div>
+                    <div class="form-group text-center">
+                    <label class="col-xs-1 col-sm-12 col-md-5 col-lg-5 text-center"><strong>Password:</strong><input ngModel  type="password" class="form-control" name="password" required ></label>
+                    </div>
+                    <input type="hidden" name="comando" value="login">
+
+                </form>
+                  <p class="text-center">If you do not have credentials, click <a class="btn btn-info" routerLink="/signup" role="button">Signup</a> </p>
+                <hr class="my-3 col-xs-1 col-md-6 col-lg-6">
+                <p class="lead text-center"> <input type="submit" class="btn btn-primary btn-lg" role="button" value="Login" form="login-form" [disabled]="!f.valid"></p>
+            </div>
+        </div>
+    </div>
+</div>
+

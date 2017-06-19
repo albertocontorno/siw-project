@@ -1,0 +1,118 @@
+<div id="box">
+  <div class="spacer" style="margin-top: 56px"></div>
+
+  <!--    <a routerLink="/elencoArtisti" fragment="a" (click)="onAnchorClick()">A</a> -->
+
+    <div class="container col-md-10 col-lg-9" id="wrapper">
+      <h2 class="display-4 title-all">Inserisci i dati dell'opera:</h2>
+        <div class="row">
+
+          <form class="col-12" (ngSubmit)="onSubmitOpera(f)" #f="ngForm" id="opera-form">
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Titolo: <input ngModel class="form-control" name="titolo" id="titolo" #titolo="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!titolo.valid && titolo.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Tecnica: <input ngModel class="form-control" name="tecnica" id="tecnica" #tecnica="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!tecnica.valid && tecnica.touched" class="alert alert-warning" style=" margin:0px; padding:6px">
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Anno: <input ngModel class="form-control" type="number" name="anno" id="anno" #anno="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!anno.valid && anno.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+               Larghezza: <input ngModel class="form-control" type="text" name="larghezza" id="larghezza" #larghezza="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!larghezza.valid && larghezza.touched" class="alert alert-warning" style="margin:0px; padding:6px" >
+                  Il campo deve essere un numero
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Altezza: <input ngModel class="form-control" name="altezza" id="altezza" #altezza="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!altezza.valid && altezza.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo deve essere un numero
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Descrizione: <textarea ngModel class="form-control" name="descrizione" id="descrizione" rows="10" #descrizione="ngModel" required></textarea>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group marg-tt">
+                <div *ngIf="!descrizione.valid && descrizione.touched" class="alert alert-info" style=" margin-top:25px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Image Path: <input ngModel class="form-control" name="imgPath" id="imgPath" #imgPath="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!imgPath.valid && imgPath.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo inserito deve avere una lunghezza
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Autore:
+                <select ngModel class="custom-select" name="id" #autore="ngModel">
+                    <option *ngFor="let autore of autori" value="{{autore.id}}">{{autore.cognome}} - {{autore.nome}} </option>
+                </select>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!autore.valid && autore.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo inserito deve avere una lunghezza
+                </div>
+              </div>
+            </div>
+
+            <!-- TASTO SUBMIT -->
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                <input [disabled]="!f.valid" type="submit" class="btn btn-primary btn-lg" value="Invia">
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group  marg-t"> </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="row">
+
+      </div>
+  </div>
+</div>

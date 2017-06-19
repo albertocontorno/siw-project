@@ -1,0 +1,41 @@
+.spacer{
+    min-height: 2em;
+}
+
+.bord{
+    border: 1px solid black;
+}
+
+  .marg-t{
+    margin-top: 25px;
+    }
+
+.title-all{
+    margin-left: 13px;
+}
+
+@media screen and (max-width: 575px){  /*toglie il margin-top se lo schermo diventa xs) */
+    .marg-t{
+    margin-top: -10px;
+    }
+
+    .title-all{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .marg-tt{
+        margin-top: -30px;
+    }
+}
+
+#box{
+  background-color: white;
+  height: 100%;
+}
+
+form .ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+
+

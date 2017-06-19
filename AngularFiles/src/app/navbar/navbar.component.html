@@ -1,0 +1,26 @@
+<nav class="navbar navbar-toggleable navbar-light bg-faded fixed-top" id="navbarTop">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand"><img src="logo.png" style="padding:0px- !important; margin:0px !important;"></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item">
+    <a class="nav-link" routerLink="/elencoArtisti" routerLinkActive="active">Artisti</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/elencoOpere" routerLinkActive="active">Opere</a>
+    </li>
+    <li *ngIf="utenteService.isAmministratore()" class="nav-item float-right">
+      <a class="nav-link" routerLink="/nuovoAutore" routerLinkActive="active">Inserisci artista</a>
+    </li>
+    <li *ngIf="utenteService.isAmministratore()" class="nav-item float-right mr-auto">
+      <a class="nav-link" routerLink="/nuovaOpera" routerLinkActive="active">Inserisci opera</a>
+    </li>
+    <li *ngIf="utenteService.isLoggedIn()" class="nav-item ml-auto" style="cursor: pointer">
+      <a class="nav-link" (click)="onLogout()">Logout</a>
+    </li>
+    </ul>
+  </div>
+</nav>

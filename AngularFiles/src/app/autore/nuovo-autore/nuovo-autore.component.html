@@ -1,0 +1,104 @@
+<div id="box">
+  <div class="spacer" style="margin-top: 56px"></div>
+
+  <!--    <a routerLink="/elencoArtisti" fragment="a" (click)="onAnchorClick()">A</a> -->
+
+    <div class="container col-md-10 col-lg-9" id="wrapper">
+      <h2 class="display-4 title-all">Inserisci i dati dell'artista:</h2>
+        <div class="row">
+
+          <form class="col-12" (ngSubmit)="onSubmitArtista(f)" #f="ngForm" id="artista-form">
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Nome: <input ngModel class="form-control" name="nome" id="nome" #nome="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!nome.valid && nome.touched" class="alert alert-warning" style=" margin:0px; padding:6px;" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Cognome: <input ngModel class="form-control" name="cognome" id="cognome" #cognome="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!cognome.valid && cognome.touched" class="alert alert-warning" style=" margin:0px; padding:6px">
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Data di Nascita: <input ngModel class="form-control" type="date" name="dataNascita" id="dataNascita" #dataN="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!dataN.valid && dataN.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  La data di nascita è obbligatoria
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Data di Morte: <input ngModel class="form-control" type="date" name="dataMorte" id="dataMorte" #dataM="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!dataM.valid && dataM.touched" class="alert alert-warning" style="margin:0px; padding:6px" >
+                  La data di morte è obbligatoria
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Luogo di Nascita: <input ngModel class="form-control" name="luogoNascita" id="luogoNascita" #luogoN="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div  *ngIf="!luogoN.valid && luogoN.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Descrizione: <textarea ngModel class="form-control" name="descrizione" id="descrizione" rows="10" #desc="ngModel" required></textarea>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group marg-tt">
+                <div *ngIf="!desc.valid && desc.touched" class="alert alert-warning" style=" margin-top:25px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                Image Path: <input ngModel class="form-control" name="imgPath" id="imgPath" #imgPath="ngModel" required>
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group align-self-center marg-t">
+                <div *ngIf="!imgPath.valid && imgPath.touched" class="alert alert-warning" style=" margin:0px; padding:6px" >
+                  Il campo non può essere lasciato vuoto
+                </div>
+              </div>
+            </div>
+
+            <!-- TASTO SUBMIT -->
+            <div class="row col-12" style="padding:0px; margin:0px">
+              <div class="form-group col-xs-12 col-sm-6">
+                <input [disabled]="!f.valid" type="submit" class="btn btn-primary btn-lg" value="Invia">
+              </div>
+              <div class="col-xs-12 col-sm-6 form-group  marg-t"> </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="row">
+
+      </div>
+  </div>
+</div>
